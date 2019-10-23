@@ -19,4 +19,12 @@ public class Algorithms
             }
         }
     }
+
+    public int getKthMinimum(int[] a, int k)
+    {
+        if (k < 0 || k >= a.length)
+            throw new NoSuchElementException();
+        sort(a);
+        return a[k];
+    }
 }
